@@ -1,0 +1,337 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+/* changes for responsive ipad pro nav padding  (mx-lg-5 px-lg-5) (mx-lg-5)*/
+
+:root {
+    --primary: #5EB6E1;
+    --secondary: #222224;
+}
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.btn{
+    color: black !important;
+    background-color: var(--primary);
+}
+
+/* btn:hover{
+    color: black !important;
+    background-color: var(--primary);
+} */
+
+.subtittle{
+ background-color: var(--secondary);
+}
+
+.subheading-content{
+    line-height: 1.6;
+}
+
+.subheading{
+max-width: 800px;
+margin: 0 auto;
+}
+
+.about-tittle::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: var(--primary);
+    margin: 8px 0;
+} 
+
+.footer-tittle::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background-color: var(--primary);
+    margin: 10px 0px;
+} 
+
+h3::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: var(--primary);
+    margin: 8px auto;
+}
+
+.headernav{
+    border-bottom: 3px solid #5eb5e100;
+}
+
+.headernav:hover {
+    border-color: var(--primary);
+}
+
+/* <!-- ************************************** banner-img ************************************** --> */
+.banner-img{
+    position: relative;
+    height: 630px;
+}
+
+.banner-img:before {
+    content: " ";
+    position: absolute;
+    top: 0%; 
+    left: 0%;
+    width: 100%; 
+    height: 630px;  
+    z-index: -1;
+    /* background-image: url('../images/banner.png'); */
+    background-size: cover;
+}
+
+.banner-icon{
+    top: 60%; 
+    left: 0%;
+}
+
+.banner-icon img{
+    border-top: 0.1px solid var(--primary);
+}
+
+.banner-content{
+    top: 30%; 
+    left: 8%;
+}
+
+/* <!-- ************************************** banner-video ************************************** --> */
+.beStrongHeader {
+    backdrop-filter: blur(18px);
+    background: rgba(255,255,255,0.7);
+}
+.banner {
+    max-height: calc(100% - 59px);
+    overflow: hidden;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+ #myVideo {
+    width: 100%;
+  } 
+  
+  /* Style the button used to pause/play the video */
+
+  #myBtn {
+    border-radius: 100px;
+    width: 100px;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+/* <!-- ************************************** 1. section ************************************** --> */
+
+.offers-box{
+   width: 100%;
+}
+
+.offers-content{
+    margin-bottom: 10px;
+}
+
+                       /* ************* BUTTON ********** */
+
+.btn-section1{
+    border-radius: 0px !important;
+    background-color: #FF6C2C;
+    color: white !important;
+}
+
+.btn-section2{
+    border-radius: 0px !important;
+    background-color: #945B9F;
+    color: white !important;
+}
+
+.btn-section3{
+    border-radius: 0px !important;
+    background-color: #5EB6E1;
+    color: white !important;
+}
+
+
+/* <!-- ************************************** ABOUT US ************************************** --> */
+
+.title-head{
+    color: #FF6C2C;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+.about-p{
+    color: #FF6C2C;
+}
+
+/* <!-- ************************************** Clasess ************************************** --> */
+
+.Clasess-box{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.details-box{
+    width: 85%;
+    height: 75%;
+    padding: 21px;
+    text-align: center;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 162, 255, 0.8);
+}
+
+/* <!-- ************************************** Clasess ************************************** --> */
+
+.details-tittle::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: white;
+    margin: 13px auto;
+}
+
+.details-p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+ }
+ 
+/* <!-- ************************************** testmonials ************************************** --> */
+
+
+.testmonials{
+    background-color: #222224;
+}
+
+.testimonial-photo{
+    border-radius: 50%;
+    border: 3px solid var(--primary);
+}
+
+/* <!-- ************************************** news ************************************** --> */
+
+.card{
+    background-color: #222224;
+}
+
+.card-title{
+    color: var(--primary);
+} 
+
+#contactForm input, #contactForm select, #contactForm textarea {
+    outline: none !important;
+    border: 1px solid var(--primary);
+}
+
+/* <!-- ************************************** contact ************************************** --> */
+
+.footer-icons{
+    color: var(--primary);
+}
+
+
+/* <!-- ************************************** Footer ************************************** --> */
+
+.footernav{
+    background-color: var(--primary);
+    color: black;
+}
+
+
+/* <!-- ************************************** MEDIA QUERY ************************************** --> */
+
+@media (max-width: 767.98px) {
+    .banner-content{
+        text-align: center;
+        top: 26%;
+        left: 0;
+        padding: 22px;
+    }
+
+    .banner-content p{
+        padding: 10px 50px;
+        font-size: small;
+    }
+
+    .about-us-box{
+        padding: 0px 20px;
+    }
+
+    .title-head{
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    #myVideo{
+        height: 100%;
+        width: auto;
+        position: absolute;
+        left: -90%;
+    }
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .banner-content{
+        text-align: center;
+        top: 35%;
+        left: 15%;
+    }
+    .offers-box{
+        width: 90%;
+     }
+    .offers-tittle{
+        font-size: 17px;
+    }
+    .offers-content{
+        font-size: 12px;
+    }
+    .about-tittle{
+        font-size: 27px;
+    }   
+
+    .subtittle{
+        padding: 0px 40px;
+    }
+    .cardb-text {
+        font-size: 15px;
+    }
+
+    .card-text{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+     }
+
+     #myVideo{
+        height: 100%;
+        width: auto;
+        position: absolute;
+        
+    }
+}
